@@ -87,7 +87,7 @@ body {
     /* max-width: 1200px; */
     padding: 35px 15px 0 15px;
     margin: 0, auto 130px auto;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
     background-color: #0E0E2C;
@@ -283,7 +283,7 @@ body {
 }
 .hover-effect-scale li div {
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.45); /* Фон блока при наведении */
+    background-color: rgba(0, 0, 0, 0.45);
     transition: all 0.4s ease-in-out;
 }
 .hover-effect-scale li img {
@@ -422,6 +422,31 @@ h1.contact-subject {
     transform: translate(0px, 0px) rotate(0deg);
 }
 
+/* **********SECTION SERVICE********** */
+
+.service ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section-service {
+    display: flex;
+    line-height: 1.8rem;
+}
+
+.section-header__li {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+li.section-header__li:hover {
+    color: #FFBE00;
+}
+
 /* **********FOOTER********** */
 
 .footer {
@@ -438,6 +463,13 @@ h1.contact-subject {
 
 
 /* ****************************************************************** */
-@media screen {
-    
+
+@media only screen and (max-width: 1250px)  {
+    .user__sign-button {
+        display: none;
+    }
+
+    .user__free-button {
+        display: none;
+    }
 }
